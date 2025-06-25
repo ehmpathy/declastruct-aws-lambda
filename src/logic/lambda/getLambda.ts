@@ -2,12 +2,12 @@ import {
   LambdaClient,
   GetFunctionConfigurationCommand,
 } from '@aws-sdk/client-lambda';
+import { asProcedure } from 'as-procedure';
 import { isUniqueKeyRef, Ref, RefByPrimary, RefByUnique } from 'domain-objects';
 import { HelpfulError, UnexpectedCodePathError } from 'helpful-errors';
 import { HasMetadata, PickOne } from 'type-fns';
 import { VisualogicContext } from 'visualogic';
 
-import { asProcedure } from '../../__nonpublished_modules__/as-procedure/src/asProcedure';
 import { AwsApiContext } from '../../domain/constants';
 import { DeclaredAwsLambda } from '../../domain/objects/DeclaredAwsLambda';
 import { castToDeclaredAwsLambda } from './castToDeclaredAwsLambda';
