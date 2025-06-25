@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/ehmpathy/declastruct-aws-lambda/compare/v1.0.0...v1.0.1) (2025-06-25)
+
+
+### Bug Fixes
+
+* **deps:** bump to usage of as-procedure ([9263e21](https://github.com/ehmpathy/declastruct-aws-lambda/commit/9263e218c524f7e4cff22c3576afa02e65dd6ab0))
+
 ## 1.0.0 (2025-06-25)
 
 
