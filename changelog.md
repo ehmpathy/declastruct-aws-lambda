@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.0 (2025-06-25)
+
+
+### Features
+
+* **init:** initialize based on prior work ([a19da4a](https://github.com/ehmpathy/declastruct-aws-lambda/commit/a19da4ad35d3d0128bb73f0e387131c6e7190258))
+
 ## [1.0.1](https://github.com/ehmpathy/declastruct-aws-lambda/compare/v1.0.0...v1.0.1) (2025-06-24)
 
 
