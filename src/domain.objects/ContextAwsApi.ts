@@ -1,4 +1,4 @@
-export interface AwsApiContext {
+export interface ContextAwsApi {
   aws: {
     account?: string;
     region?: string;

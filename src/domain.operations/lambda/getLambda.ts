@@ -8,8 +8,8 @@ import { HelpfulError, UnexpectedCodePathError } from 'helpful-errors';
 import { HasMetadata, PickOne } from 'type-fns';
 import { VisualogicContext } from 'visualogic';
 
-import { AwsApiContext } from '../../domain/constants';
-import { DeclaredAwsLambda } from '../../domain/objects/DeclaredAwsLambda';
+import { ContextAwsApi } from '../../domain.objects/ContextAwsApi';
+import { DeclaredAwsLambda } from '../../domain.objects/DeclaredAwsLambda';
 import { castToDeclaredAwsLambda } from './castToDeclaredAwsLambda';
 
 /**
@@ -24,7 +24,7 @@ export const getLambda = asProcedure(
         ref: Ref<typeof DeclaredAwsLambda>;
       }>;
     },
-    context: AwsApiContext & VisualogicContext,
+    context: ContextAwsApi & VisualogicContext,
   ): Promise<HasMetadata<DeclaredAwsLambda> | null> => {
     // handle by ref
     if (input.by.ref)

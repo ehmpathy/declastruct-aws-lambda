@@ -3,7 +3,7 @@ import { isUniDateTime } from '@ehmpathy/uni-time';
 import { UnexpectedCodePathError } from 'helpful-errors';
 import { HasMetadata, isNotUndefined, NotUndefined } from 'type-fns';
 
-import { DeclaredAwsLambda } from '../../domain/objects/DeclaredAwsLambda';
+import { DeclaredAwsLambda } from '../../domain.objects/DeclaredAwsLambda';
 
 const getOrThrow = <T, K extends keyof T>(
   obj: T,

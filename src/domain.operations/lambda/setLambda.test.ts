@@ -7,8 +7,8 @@ import * as fs from 'fs/promises';
 import * as path from 'path';
 import { VisualogicContext } from 'visualogic';
 
-import { AwsApiContext } from '../../domain/constants';
-import { DeclaredAwsLambda } from '../../domain/objects/DeclaredAwsLambda';
+import { ContextAwsApi } from '../../domain.objects/ContextAwsApi';
+import { DeclaredAwsLambda } from '../../domain.objects/DeclaredAwsLambda';
 import * as castModule from './castToDeclaredAwsLambda';
 import * as getLambdaModule from './getLambda';
 import { setLambda } from './setLambda';
@@ -23,7 +23,7 @@ const mockSend = jest.fn();
   send: mockSend,
 }));
 
-const context: AwsApiContext & VisualogicContext = {
+const context: ContextAwsApi & VisualogicContext = {
   aws: { region: 'us-east-1' },
   log: console,
 };

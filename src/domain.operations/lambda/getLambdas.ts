@@ -3,8 +3,8 @@ import { HelpfulError } from 'helpful-errors';
 import { HasMetadata } from 'type-fns';
 import { VisualogicContext } from 'visualogic';
 
-import { AwsApiContext } from '../../domain/constants';
-import { DeclaredAwsLambda } from '../../domain/objects/DeclaredAwsLambda';
+import { ContextAwsApi } from '../../domain.objects/ContextAwsApi';
+import { DeclaredAwsLambda } from '../../domain.objects/DeclaredAwsLambda';
 import { castToDeclaredAwsLambda } from './castToDeclaredAwsLambda';
 
 /**
@@ -17,7 +17,7 @@ export const getLambdas = async (
       limit?: number;
     };
   },
-  context: AwsApiContext & VisualogicContext,
+  context: ContextAwsApi & VisualogicContext,
 ): Promise<HasMetadata<DeclaredAwsLambda>[]> => {
   const lambda = new LambdaClient({ region: context.aws.region });
 

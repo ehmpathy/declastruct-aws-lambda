@@ -1,3 +1,3 @@
-import { AwsApiContext } from '../domain/constants';
+import { ContextAwsApi } from '../domain.objects/ContextAwsApi';
 
-export const getSampleAwsApiContext = (): AwsApiContext => ({ aws: {} });
+export const getSampleAwsApiContext = (): ContextAwsApi => ({ aws: {} });

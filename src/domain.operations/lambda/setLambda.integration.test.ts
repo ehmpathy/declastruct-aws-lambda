@@ -1,7 +1,7 @@
 import { given, then } from 'test-fns';
 
 import { getSampleAwsApiContext } from '../../__test_assets__/getSampleAwsApiContext';
-import { DeclaredAwsLambda } from '../../domain/objects/DeclaredAwsLambda';
+import { DeclaredAwsLambda } from '../../domain.objects/DeclaredAwsLambda';
 import { setLambda } from './setLambda';
 
 const log = console;

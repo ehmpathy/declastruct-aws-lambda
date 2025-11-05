@@ -11,8 +11,8 @@ import { resolve } from 'path';
 import { PickOne } from 'type-fns';
 import { VisualogicContext } from 'visualogic';
 
-import { AwsApiContext } from '../../domain/constants';
-import { DeclaredAwsLambda } from '../../domain/objects/DeclaredAwsLambda';
+import { ContextAwsApi } from '../../domain.objects/ContextAwsApi';
+import { DeclaredAwsLambda } from '../../domain.objects/DeclaredAwsLambda';
 import { castToDeclaredAwsLambda } from './castToDeclaredAwsLambda';
 import { getLambda } from './getLambda';
 
@@ -25,7 +25,7 @@ export const setLambda = asProcedure(
       finsert: DeclaredAwsLambda & { codeZipUri: string };
       upsert: DeclaredAwsLambda & { codeZipUri: string };
     }>,
-    context: AwsApiContext & VisualogicContext,
+    context: ContextAwsApi & VisualogicContext,
   ): Promise<DeclaredAwsLambda> => {
     const lambdaDesired = input.finsert ?? input.upsert;
     const awsLambdaSdk = new LambdaClient({ region: context.aws.region });
