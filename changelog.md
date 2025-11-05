@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/ehmpathy/declastruct-aws-lambda/compare/v1.0.1...v1.0.2) (2025-11-05)
+
+
+### Bug Fixes
+
+* **filetree:** reorg filetree per latest best practs ([53d7de9](https://github.com/ehmpathy/declastruct-aws-lambda/commit/53d7de9f50b715bc317a5faa85596e29522427a2))
+
 ## [1.0.1](https://github.com/ehmpathy/declastruct-aws-lambda/compare/v1.0.0...v1.0.1) (2025-06-25)
 
 
